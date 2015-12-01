@@ -19,14 +19,6 @@
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-        <div id="fb-root"></div>
-        <script>(function(d, s, id) {
-          var js, fjs = d.getElementsByTagName(s)[0];
-          if (d.getElementById(id)) return;
-          js = d.createElement(s); js.id = id;
-          js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5&appId=933260450100457";
-          fjs.parentNode.insertBefore(js, fjs);
-        }(document, 'script', 'facebook-jssdk'));</script>
 
         <div class="header-container">
             <header>
@@ -37,7 +29,12 @@
         <div class="main-container"> 
             <section class="main">
                 <div id="countdown">
-            
+                    <span class="clock">18</span>:<span class="clock">43</span>:<span class="clock">54</span>
+                </div>
+                <div class="caption">
+                    <span class="hours">hrs</span>
+                    <span class="minutes">min</span>
+                    <span class="seconds">sec</span>
                 </div>
                 <header>
                     <h1>article header h1</h1>
@@ -53,9 +50,6 @@
                         <a href="https://twitter.com/TechMeOfficiel" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @TechMeOfficiel</a>
                         <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
 
-                        <div class="fb-follow"></div>
-
-
                 </footer>
             </section>
         </div> <!-- #main-container -->
@@ -65,6 +59,7 @@
                 <h3>&copy; TechMe - 2015</h3>
             </footer>
         </div>
+
 
         <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
         <script src="js/jquery.countdown.min.js"></script>

@@ -1,6 +1,7 @@
 body{
 	background-color: #000000;
 	color: #FFFFFF;
+	font-size: 16px;
 }
 
 
@@ -43,6 +44,26 @@ a:hover, a:focus, a:active {
 
 	#countdown{
 		text-align: center;
+		font-size: 3em;
+		max-width: 520px; 
+		min-width: 180px;
+
+		.clock{
+			color: #e6590f;
+			font-size: 2em;
+		}
+	}
+
+	.caption{
+		text-transform: uppercase;
+		text-align: center;
+		padding-left: 5%;
+		padding-right: 5%;
+		display: block;
+
+		.hours{width:30%}
+		.minutes{width:30%}
+		.seconds{width:30%}
 	}
 
 	.main{
