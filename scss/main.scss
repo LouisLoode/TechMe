@@ -1,0 +1,74 @@
+body{
+	background-color: #000000;
+	color: #FFFFFF;
+}
+
+
+a {
+	opacity: 1;
+	text-decoration: none;
+	color: #e6590f;
+	transition: opacity 0.1s ease-in-out;
+}
+a:visited {
+	color: #e6590f;
+}
+a:hover, a:focus, a:active {
+	opacity: 0.65;
+	text-decoration: none;
+	transition: opacity 0.05s ease-in-out;
+}
+
+.header-container{
+
+	header{
+		text-transform: uppercase;
+		text-align: center; 
+
+		.title{
+
+			.colored{
+				color: #e6590f;
+			}
+		}
+	}
+}
+
+.main-container{
+	margin-right: auto;
+	margin-left: auto;
+	max-width: 520px; 
+	min-width: 180px;
+	padding: 10px;
+
+	.main{
+		header{
+
+		}
+		section{
+			text-align:center;
+
+			.twitter-timeline{
+
+			}
+		}
+		footer{
+
+		}
+	}
+} 
+
+.footer-container{
+	margin-right: auto;
+	margin-left: auto;
+	max-width: 520px; 
+	min-width: 180px;
+
+	.wrapper{
+		text-align:center;
+
+		h3{
+
+		}
+	}
+}

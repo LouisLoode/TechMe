@@ -1,9 +1,9 @@
 var options = {
   "sassFiles"  : "./scss/**/*.scss",
   "proxyURL" : "localhost/TechMe",
-  "cssPath"  : "./css/",
-  "jsFiles"  : "./js/**/*.js",
-  "jsMinPath": ".js-min/"
+  "cssPath"  : "./dist/css/",
+  "jsFiles"  : "./dist/js/**/*.js",
+  "jsMinPath": "./dist/js-min/"
 };
 
 /**
