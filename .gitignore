@@ -3,3 +3,4 @@ node_modules/
 Gulpfile.js
 *~
 .DS_Store
+dist/css/main.css
