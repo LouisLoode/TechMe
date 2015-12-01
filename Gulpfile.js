@@ -2,8 +2,8 @@ var options = {
   "sassFiles"  : "./scss/**/*.scss",
   "proxyURL" : "localhost/TechMe",
   "cssPath"  : "./dist/css/",
-  "jsFiles"  : "./dist/js/**/*.js",
-  "jsMinPath": "./dist/js-min/"
+  "jsFiles"  : "./js/**/*.js",
+  "jsMinPath": "./dist/js/"
 };
 
 /**
@@ -46,5 +46,5 @@ gulp.task('compile-sass', function() {
 gulp.task('js-min', function() {
   return gulp.src(options.jsFiles)
     .pipe(uglify())
-    .pipe(gulp.dest(''));
+    .pipe(gulp.dest(options.jsMinPath));
 });

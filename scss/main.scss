@@ -31,7 +31,7 @@ a:hover, a:focus, a:active {
 				color: #e6590f;
 			}
 		}
-	}
+	} 
 }
 
 .main-container{
@@ -40,6 +40,10 @@ a:hover, a:focus, a:active {
 	max-width: 520px; 
 	min-width: 180px;
 	padding: 10px;
+
+	#countdown{
+		text-align: center;
+	}
 
 	.main{
 		header{
