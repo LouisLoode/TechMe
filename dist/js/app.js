@@ -1,9 +1,1 @@
-(function($){
-	$(function() {
-		$('#countdown').countdown('2015/12/03 16:30:00', function(event) {
-			$(this)
-				.html(event.strftime('<span class="clock">%H</span>:<span class="clock">%M</span>:<span class="clock">%S</span>'));
-		});
-	});
-
-})(jQuery);
+$(document).ready(function(){var n=countdown(new Date,function(n){document.getElementById("pageTimer").innerHTML=n.toHTML("strong")},countdown.HOURS|countdown.MINUTES|countdown.SECONDS);window.clearInterval(n),$("#countdown").countdown("2015/12/03 16:30:00",function(n){$(this).html(n.strftime('<span class="clock">%H</span>:<span class="clock">%M</span>:<span class="clock">%S</span>'))})});

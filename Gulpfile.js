@@ -26,13 +26,13 @@ gulp.task('default', function() {
     proxy: options.proxyURL
   });
 
-  gulp.watch(options.sassFiles, ['compile-sass']);
+  gulp.watch(options.sassFiles, ['sass']);
   gulp.watch("./**/*.html").on('change', browserSync.reload);
   gulp.watch("./**/*.js").on('change', browserSync.reload);
   gulp.watch("./**/*.php").on('change', browserSync.reload);
 });
 
-gulp.task('compile-sass', function() {
+gulp.task('sass', function() {
   gulp.src(options.sassFiles)
     .pipe(sourcemaps.init())
       .pipe(sass().on('error', sass.logError))
@@ -43,7 +43,7 @@ gulp.task('compile-sass', function() {
     .pipe(browserSync.stream());
 });
 
-gulp.task('js-min', function() {
+gulp.task('js', function() {
   return gulp.src(options.jsFiles)
     .pipe(uglify())
     .pipe(gulp.dest(options.jsMinPath));

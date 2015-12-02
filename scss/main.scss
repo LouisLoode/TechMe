@@ -22,6 +22,8 @@ body {
   'Arial', sans-serif;
 }
 
+h1
+
 a {
 	opacity: 1;
 	text-decoration: none;
@@ -50,6 +52,9 @@ a {
     'Helvetica Neue',
     'Helvetica',
     'Arial', sans-serif;
+    font-size: 5.5em;
+    margin: 0;
+    padding: 0;
     .colored {
 		  color: $theOrange;
     }
@@ -72,6 +77,9 @@ a {
 		text-align: center;
 		padding: 0 5% 5%;
 		display: block;
+		span{
+			padding: 45px;
+		}
 		.hours, .minutes, .seconds {
 			width: 30%;
 		}
