@@ -1,99 +1,104 @@
-body{
-	background-color: #000000;
-	color: #FFFFFF;
-	font-size: 16px;
+@import '_fonts';
+@import '_reset';
+
+$theOrange : #e6590f;
+
+@mixin clearfix() {
+	&::after {
+		content: "";
+		display: block;
+		clear: both;
+	}
 }
 
+body {
+  background-color: #000;
+  color: #FFF;
+  font-size: 16px;
+  min-width: 320px;
+  font-family: 'Apercu',
+  'Helvetica Neue',
+  'Helvetica',
+  'Arial', sans-serif;
+}
 
 a {
 	opacity: 1;
 	text-decoration: none;
-	color: #e6590f;
+	color: $theOrange;
 	transition: opacity 0.1s ease-in-out;
-}
-a:visited {
-	color: #e6590f;
-}
-a:hover, a:focus, a:active {
-	opacity: 0.65;
-	text-decoration: none;
-	transition: opacity 0.05s ease-in-out;
-}
-
-.header-container{
-
-	header{
-		text-transform: uppercase;
-		text-align: center; 
-
-		.title{
-
-			.colored{
-				color: #e6590f;
-			}
-		}
-	} 
+	&:visited {
+		color: $theOrange;
+	}
+	&:hover, &:focus, &:active {
+		opacity: 0.65;
+		text-decoration: none;
+		transition: opacity 0.05s ease-in-out;
+	}
 }
 
-.main-container{
-	margin-right: auto;
-	margin-left: auto;
-	max-width: 520px; 
-	min-width: 180px;
+.main-wrapper {
+	margin: 0 auto;
+	max-width: 90%;
+}
+
+#header {
+	text-transform: uppercase;
+	text-align: center;
+	.title {
+    font-family: 'Apercu Black',
+    'Helvetica Neue',
+    'Helvetica',
+    'Arial', sans-serif;
+    .colored {
+		  color: $theOrange;
+    }
+	}
+}
+
+.main {
 	padding: 10px;
-
-	#countdown{
+	#countdown {
 		text-align: center;
 		font-size: 3em;
-		max-width: 520px; 
-		min-width: 180px;
-
-		.clock{
-			color: #e6590f;
+		.clock {
+			color: $theOrange;
 			font-size: 2em;
 		}
 	}
 
-	.caption{
+	.caption {
 		text-transform: uppercase;
 		text-align: center;
-		padding-left: 5%;
-		padding-right: 5%;
+		padding: 0 5% 5%;
 		display: block;
-
-		.hours{width:30%}
-		.minutes{width:30%}
-		.seconds{width:30%}
-	}
-
-	.main{
-		header{
-
-		}
-		section{
-			text-align:center;
-
-			.twitter-timeline{
-
-			}
-		}
-		footer{
-
+		.hours, .minutes, .seconds {
+			width: 30%;
 		}
 	}
-} 
 
-.footer-container{
-	margin-right: auto;
-	margin-left: auto;
-	max-width: 520px; 
-	min-width: 180px;
+	header { }
+	section {
+		text-align: center;
+		.twitter-timeline { }
+	}
 
-	.wrapper{
-		text-align:center;
-
-		h3{
-
+	.social-container {
+		@include clearfix();
+		h2 {
+			text-align: center;
+		}
+		.span {
+			width: 100%;
+			display: inline-block;
+      text-align: center;
 		}
 	}
+}
+
+
+
+#footer {
+	text-align: center;
+	h3 { }
 }

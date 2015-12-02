@@ -1,3 +1,6 @@
 node_modules/
-dist/css/
-dist/js/
+# Because vhost ain't for everyone.
+Gulpfile.js
+*~
+.DS_Store
+dist/css/main.css
