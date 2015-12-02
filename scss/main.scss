@@ -66,7 +66,10 @@ a {
 	#countdown {
 		text-align: center;
 		font-size: 3em;
-		.clock {
+		.days{
+			padding-right: 40px;
+		}
+		.days, .clock {
 			color: $theOrange;
 			font-size: 2em;
 		}
@@ -80,7 +83,11 @@ a {
 		span{
 			padding: 45px;
 		}
-		.hours, .minutes, .seconds {
+		.days{
+			padding-left: 30px;
+			padding-right: 55px;
+		}
+		.days, .hours, .minutes, .seconds {
 			width: 30%;
 		}
 	}
@@ -93,13 +100,9 @@ a {
 
 	.social-container {
 		@include clearfix();
-		h2 {
-			text-align: center;
-		}
-		.span {
-			width: 100%;
-			display: inline-block;
-      text-align: center;
+		text-align: center;
+		a {
+			margin: 25px;	
 		}
 	}
 }
