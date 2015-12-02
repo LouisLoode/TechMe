@@ -102,14 +102,27 @@ a {
 		@include clearfix();
 		text-align: center;
 		a {
-			margin: 25px;	
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			
+			img{
+				height: 30px;
+				padding: 10px;
+			}
 		}
+		.fb:hover{
+			background: #3a63a6; 
+		}	
+		.twitter:hover{
+			background: #00aced;
+		}		
 	}
 }
-
+  
 
 
 #footer {
 	text-align: center;
-	h3 { }
+	font-size: 0.8em;
 }
